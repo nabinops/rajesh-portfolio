@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rajesh Tiwari — Hotel Professional & Content Creator, 25, Nepali, based in Dubai UAE." />
+  <title>Rajesh Tiwari | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'sky-main':   '#025a8e',
+            'sky-bright': '#0369a1',
+            'sky-light':  '#0ea5e9',
+            'sky-pale':   '#7dd3fc',
+            'sky-wash':   '#eef7ff',
+            'navy':       '#071c38',
+            'body-text':  '#2a4560',
+            'muted':      '#5a7a9a',
+          },
+          fontFamily: { poppins: ['Poppins', 'sans-serif'] },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="font-poppins bg-white text-navy antialiased overflow-x-hidden">
+
+  <!-- ═══════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════ -->
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="header-inner max-w-7xl mx-auto px-5 py-3.5">
+
+      <a href="#hero" class="logo-link flex items-center gap-2.5 flex-shrink-0">
+        <div class="logo-badge">RT</div>
+        <span class="logo-name font-bold text-base">Rajesh Tiwari</span>
+      </a>
+
+      <nav class="desktop-nav hidden md:flex items-center gap-6">
+        <a href="#about"   class="nav-link">About</a>
+        <a href="#journey" class="nav-link">Journey</a>
+        <a href="#vision"  class="nav-link">Vision</a>
+        <a href="#ideas"   class="nav-link">Ideas</a>
+        <a href="#blog"    class="nav-link">Blog</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#social"  class="nav-link">Social</a>
+        <a href="#contact" class="btn-primary-sm ml-2">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+          <i id="theme-icon" class="fa-solid fa-moon"></i>
+          <span class="toggle-label">Dark</span>
+        </button>
+        <button id="hamburger" class="hamburger-btn md:hidden" aria-label="Toggle menu" aria-expanded="false">
+          <span class="h-line"></span>
+          <span class="h-line"></span>
+          <span class="h-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu-closed md:hidden overflow-hidden transition-all duration-300">
+      <nav class="px-6 py-4 flex flex-col items-center gap-0 border-t border-sky-100">
+        <a href="#about"   class="mob-nav-link">About</a>
+        <a href="#journey" class="mob-nav-link">Journey</a>
+        <a href="#vision"  class="mob-nav-link">Vision</a>
+        <a href="#ideas"   class="mob-nav-link">Ideas</a>
+        <a href="#blog"    class="mob-nav-link">Blog</a>
+        <a href="#gallery" class="mob-nav-link">Gallery</a>
+        <a href="#social"  class="mob-nav-link">Social</a>
+        <div class="mt-4 w-full flex justify-center">
+          <a href="#contact" class="btn-primary-sm">Get In Touch</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════ -->
+    <section id="hero" class="relative min-h-screen flex items-center pt-24 pb-0 px-5 overflow-hidden">
+
+      <div class="orb orb-sky-1"></div>
+      <div class="orb orb-sky-2"></div>
+      <div class="orb orb-sky-3"></div>
+      <div class="hero-dot-grid" aria-hidden="true"></div>
+      <div id="particles" class="absolute inset-0 pointer-events-none z-0"></div>
+
+      <div class="deco-rings" aria-hidden="true">
+        <div class="deco-ring deco-ring-1"></div>
+        <div class="deco-ring deco-ring-2"></div>
+        <div class="deco-ring deco-ring-3"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-16 items-center relative z-10">
+
+        <!-- Left: Text -->
+        <div class="order-2 md:order-1">
+          <div class="hero-tag" data-aos="fade-down">
+            <i class="fa-solid fa-hands-praying mr-2"></i>
+            नमस्ते &mdash; Welcome to my world
+          </div>
+
+          <h1 class="hero-name" data-aos="fade-up" data-aos-delay="80">
+            Rajesh<br /><span class="sky-gradient-text">Tiwari</span>
+          </h1>
+
+          <div class="hero-meta" data-aos="fade-up" data-aos-delay="140">
+            <span class="meta-badge">
+              <i class="fa-solid fa-cake-candles"></i>25 yrs
+            </span>
+            <span class="meta-badge meta-badge-nepal">
+              <i class="fa-solid fa-mountain-sun"></i>Nepali
+            </span>
+            <span class="meta-badge meta-badge-hotel">
+              <i class="fa-solid fa-hotel"></i>Hotel Pro · Dubai
+            </span>
+          </div>
+
+          <p class="hero-tagline" data-aos="fade-up" data-aos-delay="200">
+            From the mountains of Nepal to the skyline of Dubai —<br class="hidden md:block" />
+            chasing dreams and creating stories, one day at a time.
+          </p>
+
+          <div class="hero-divider" data-aos="fade-up" data-aos-delay="240"></div>
+
+          <div class="flex flex-wrap gap-4 mt-8" data-aos="fade-up" data-aos-delay="280">
+            <a href="#contact" class="btn-primary">
+              <i class="fa-solid fa-envelope mr-2"></i>Get In Touch
+            </a>
+            <a href="#journey" class="btn-outline">
+              My Journey <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+            </a>
+          </div>
+
+          <div class="flex items-center gap-3 mt-8" data-aos="fade-up" data-aos-delay="340">
+            <span class="text-sm font-medium text-muted">Follow:</span>
+            <a href="#" class="hero-social-icon tiktok-ico" target="_blank" rel="noopener" aria-label="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="#" class="hero-social-icon fb-ico" target="_blank" rel="noopener" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="hero-social-icon ig-ico" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/9779813456789" class="hero-social-icon wa-ico" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Photo -->
+        <div class="order-1 md:order-2 flex justify-center" data-aos="fade-left" data-aos-delay="100">
+          <div class="hero-photo-stage">
+            <div class="hero-photo-backdrop"></div>
+            <div class="hero-photo-glow"></div>
+
+            <img
+              src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=520&h=680&fit=crop&crop=top&auto=format&q=90"
+              alt="Rajesh Tiwari"
+              class="hero-photo"
+            />
+
+            <div class="float-chip float-chip-top">
+              <i class="fa-solid fa-location-dot" style="color:#0369a1;"></i>
+              <span>Dubai, UAE</span>
+            </div>
+
+            <div class="float-chip float-chip-bottom">
+              <i class="fa-solid fa-star" style="color:#f59e0b;"></i>
+              <span>10K+ Fans</span>
+            </div>
+
+            <div class="float-chip float-chip-right">
+              <i class="fa-solid fa-hotel" style="color:#0369a1;"></i>
+              <span>5★ Hotel</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mountain-cut" aria-hidden="true">
+        <svg viewBox="0 0 1440 110" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,110 L0,72 L90,38 L180,68 L270,18 L370,60 L450,28 L540,65 L640,6 L730,52 L820,22 L920,62 L1010,24 L1110,65 L1200,34 L1300,68 L1390,36 L1440,60 L1440,110 Z" fill="var(--bg-surface)"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         ABOUT
+    ═══════════════════════════════════════ -->
+    <section id="about" class="py-24 px-5 relative overflow-hidden">
+      <div class="section-blob section-blob-right"></div>
+      <div class="max-w-6xl mx-auto relative z-10">
+
+        <div class="section-label-wrap" data-aos="fade-up">
+          <span class="section-label">About Me</span>
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="80">
+          The Person <span class="sky-gradient-text">Behind the Story</span>
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-14 items-center mt-14">
+
+          <div class="flex justify-center" data-aos="fade-right">
+            <div class="about-photo-frame">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=460&h=560&fit=crop&crop=face&auto=format&q=85"
+                alt="Rajesh Tiwari"
+                class="about-photo"
+              />
+              <div class="about-photo-border"></div>
+              <div class="about-nepali-tag">
+                <i class="fa-solid fa-mountain mr-1"></i>Proud Nepali 🇳🇵
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-left" data-aos-delay="100">
+            <p class="about-body mb-5">
+              Hey! I'm <strong class="font-semibold text-sky-main">Rajesh Tiwari</strong>, 25, from the beautiful hills of Nepal. Currently working as a hospitality professional in Dubai, UAE — where every day brings new people, new stories, and new adventures.
+            </p>
+            <p class="about-body mb-5">
+              Beyond the hotel corridors, I'm an active content creator — sharing my life, culture, and journey across TikTok, Instagram, and Facebook. My content is raw, real, and rooted in the Nepali spirit of resilience and warmth.
+            </p>
+            <p class="about-body mb-10">
+              This is my little corner of the internet — built to share my story, connect with amazing people, and remind myself and you that dreams really do come true. <i class="fa-solid fa-hands-praying" style="color:var(--sky-main);"></i>
+            </p>
+
+            <div class="stats-row">
+              <div class="stat-block">
+                <span class="stat-num">5+</span>
+                <span class="stat-lbl">Years Exp</span>
+              </div>
+              <div class="stat-sep"></div>
+              <div class="stat-block">
+                <span class="stat-num">10K+</span>
+                <span class="stat-lbl">Followers</span>
+              </div>
+              <div class="stat-sep"></div>
+              <div class="stat-block">
+                <span class="stat-num">3+</span>
+                <span class="stat-lbl">Countries</span>
+              </div>
+              <div class="stat-sep"></div>
+              <div class="stat-block">
+                <span class="stat-num">25</span>
+                <span class="stat-lbl">Age</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         JOURNEY
+    ═══════════════════════════════════════ -->
+    <section id="journey" class="py-24 px-5 relative overflow-hidden">
+      <div class="section-blob section-blob-left"></div>
+      <div class="max-w-4xl mx-auto relative z-10">
+
+        <div class="section-label-wrap" data-aos="fade-up">
+          <span class="section-label">My Journey</span>
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="80">
+          Education &amp; <span class="sky-gradient-text">Experience</span>
+        </h2>
+
+        <div class="tab-row" data-aos="fade-up" data-aos-delay="130">
+          <button id="tab-education" class="tab-btn tab-active">
+            <i class="fa-solid fa-graduation-cap mr-2"></i>Education
+          </button>
+          <button id="tab-work" class="tab-btn">
+            <i class="fa-solid fa-briefcase mr-2"></i>Work
+          </button>
+        </div>
+
+        <div id="education-content" class="tl-pane">
+          <div class="tl-track">
+
+            <div class="tl-item" data-aos="fade-up">
+              <div class="tl-dot tl-edu"><i class="fa-solid fa-graduation-cap text-xs text-white"></i></div>
+              <div class="tl-card card-surface">
+                <span class="tl-date">2010 – 2012</span>
+                <h3 class="tl-title">Secondary Education (SLC)</h3>
+                <p class="tl-sub"><i class="fa-solid fa-school mr-1"></i>Shree Janajyoti High School · Nepal</p>
+                <p class="tl-desc">Completed SLC with strong academics. First sparked curiosity about the world beyond Nepal's mountains.</p>
+              </div>
+            </div>
+
+            <div class="tl-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="tl-dot tl-edu"><i class="fa-solid fa-graduation-cap text-xs text-white"></i></div>
+              <div class="tl-card card-surface">
+                <span class="tl-date">2012 – 2015</span>
+                <h3 class="tl-title">Higher Secondary (+2) — Management</h3>
+                <p class="tl-sub"><i class="fa-solid fa-building-columns mr-1"></i>Tribhuvan Multiple Campus · Kathmandu</p>
+                <p class="tl-desc">Studied commerce and management. Built leadership and communication skills essential for hospitality.</p>
+              </div>
+            </div>
+
+            <div class="tl-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="tl-dot tl-edu"><i class="fa-solid fa-graduation-cap text-xs text-white"></i></div>
+              <div class="tl-card card-surface">
+                <span class="tl-date">2016 – 2018</span>
+                <h3 class="tl-title">Diploma in Hotel Management</h3>
+                <p class="tl-sub"><i class="fa-solid fa-hotel mr-1"></i>Nepal Academy of Tourism &amp; Hotel Management</p>
+                <p class="tl-desc">Hands-on training in F&amp;B, front office, guest relations, and hospitality operations — the launchpad for an international career.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="work-content" class="tl-pane hidden">
+          <div class="tl-track">
+
+            <div class="tl-item" data-aos="fade-up">
+              <div class="tl-dot tl-work"><i class="fa-solid fa-briefcase text-xs text-white"></i></div>
+              <div class="tl-card card-surface">
+                <span class="tl-date tl-date-work">2018 – 2019</span>
+                <h3 class="tl-title">F&amp;B Trainee</h3>
+                <p class="tl-sub"><i class="fa-solid fa-location-dot mr-1"></i>Radisson Hotel · Kathmandu, Nepal</p>
+                <p class="tl-desc">First professional hospitality experience. Served hundreds of guests daily, learned high-standard service and teamwork.</p>
+              </div>
+            </div>
+
+            <div class="tl-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="tl-dot tl-work"><i class="fa-solid fa-briefcase text-xs text-white"></i></div>
+              <div class="tl-card card-surface">
+                <span class="tl-date tl-date-work">2019 – 2022</span>
+                <h3 class="tl-title">Senior Waiter</h3>
+                <p class="tl-sub"><i class="fa-solid fa-location-dot mr-1"></i>Luxury Beach Resort · Abu Dhabi, UAE</p>
+                <p class="tl-desc">Joined an international team, served guests from 50+ countries, and got promoted within 8 months for outstanding service.</p>
+              </div>
+            </div>
+
+            <div class="tl-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="tl-dot tl-work"><i class="fa-solid fa-briefcase text-xs text-white"></i></div>
+              <div class="tl-card card-surface">
+                <span class="tl-date tl-date-work">2022 – Present</span>
+                <h3 class="tl-title">Hotel Professional</h3>
+                <p class="tl-sub"><i class="fa-solid fa-location-dot mr-1"></i>5-Star Hotel · Dubai, UAE</p>
+                <p class="tl-desc">Delivering world-class guest experiences at one of Dubai's premier properties while building a growing social media brand.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         VISION & MISSION
+    ═══════════════════════════════════════ -->
+    <section id="vision" class="py-24 px-5 relative overflow-hidden">
+      <div class="vision-bg"></div>
+      <div class="vision-pattern" aria-hidden="true"></div>
+
+      <div class="max-w-6xl mx-auto relative z-10">
+        <div class="section-label-wrap" data-aos="fade-up">
+          <span class="section-label-light">Ma Kahaa Jaandachhu</span>
+        </div>
+        <h2 class="section-title text-white" data-aos="fade-up" data-aos-delay="80">Vision &amp; Mission</h2>
+
+        <div class="grid md:grid-cols-2 gap-8 mt-14">
+
+          <div class="vision-card" data-aos="fade-right" data-aos-delay="100">
+            <div class="vision-icon">
+              <i class="fa-solid fa-eye text-2xl text-sky-light"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-4">Mero Vision</h3>
+            <p class="text-white/75 leading-relaxed text-sm">
+              Yuwa Nepali haru ra duniyabhar ka manchhe haru lai authentic storytelling bata inspire garna chahanchhu. Himalayako goreto bata Dubai ko aakash samma ko mero yatra ek praman ho — bhumigol seema hoina, kebal suru ko thau ho.
+            </p>
+            <p class="text-white/75 leading-relaxed text-sm mt-3">
+              Sanskriti, sakharat, ra saccho manav sambandh ma jiund ek brand nirman garna chahanchhu.
+            </p>
+          </div>
+
+          <div class="vision-card" data-aos="fade-left" data-aos-delay="200">
+            <div class="vision-icon">
+              <i class="fa-solid fa-bullseye text-2xl text-sky-light"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-4">Mero Mission</h3>
+            <p class="text-white/75 leading-relaxed text-sm">
+              Har din haajir hunu — kaam ma ra online ma — ek matra uddeshya le: mulya dinu. Hospitality ma, har guest lai kotha ko sabha bhandaa mukhya manchhe feel garaaunu parchha.
+            </p>
+            <p class="text-white/75 leading-relaxed text-sm mt-3">
+              Content ma, har katha imandaar ra utthaune hunu parchha. Badh, farkaaune, ra sikai kabhi band nagarne — jindagi jaha leos ni.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="quote-block" data-aos="zoom-in" data-aos-delay="300">
+          <i class="fa-solid fa-quote-left text-sky-light text-2xl mb-4 block"></i>
+          <p class="text-lg md:text-2xl font-semibold text-white italic text-center max-w-2xl mx-auto">
+            "Pahad le dhairya sikayo. Dubai le mahattvaakanksha sikayo. Nepal le muta sikayo."
+          </p>
+          <p class="text-white/40 text-sm mt-4">— Rajesh Tiwari</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         PLAN & IDEAS
+    ═══════════════════════════════════════ -->
+    <section id="ideas" class="py-24 px-5 relative overflow-hidden">
+      <div class="section-blob section-blob-right"></div>
+      <div class="max-w-6xl mx-auto relative z-10">
+
+        <div class="section-label-wrap" data-aos="fade-up">
+          <span class="section-label">Looking Ahead</span>
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="80">
+          Plans &amp; <span class="sky-gradient-text">Ideas</span>
+        </h2>
+        <p class="text-center text-muted mt-4 mb-14 max-w-xl mx-auto text-sm" data-aos="fade-up" data-aos-delay="120">
+          Big goals. Clear direction. Here's what I'm working toward.
+        </p>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <div class="idea-card card-surface tilt-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="idea-icon"><i class="fa-solid fa-rocket"></i></div>
+            <h3 class="idea-title">Launch My Brand</h3>
+            <p class="idea-desc">Building a personal brand rooted in Nepali culture, hospitality wisdom, and authentic Dubai life stories.</p>
+          </div>
+
+          <div class="idea-card card-surface tilt-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="idea-icon"><i class="fa-solid fa-video"></i></div>
+            <h3 class="idea-title">Grow Content</h3>
+            <p class="idea-desc">Expanding TikTok &amp; Instagram with travel vlogs, hotel life behind-the-scenes, and honest day-in-the-life content.</p>
+          </div>
+
+          <div class="idea-card card-surface tilt-card" data-aos="fade-up" data-aos-delay="160">
+            <div class="idea-icon"><i class="fa-solid fa-plane-departure"></i></div>
+            <h3 class="idea-title">Travel &amp; Document</h3>
+            <p class="idea-desc">Visit new countries, experience diverse cultures, and share every adventure from street food to five-star stays.</p>
+          </div>
+
+          <div class="idea-card card-surface tilt-card" data-aos="fade-up" data-aos-delay="240">
+            <div class="idea-icon"><i class="fa-solid fa-book-open"></i></div>
+            <h3 class="idea-title">Level Up Skills</h3>
+            <p class="idea-desc">Pursuing certifications in hospitality management and digital marketing to open even bigger career opportunities.</p>
+          </div>
+
+          <div class="idea-card card-surface tilt-card" data-aos="fade-up" data-aos-delay="320">
+            <div class="idea-icon"><i class="fa-solid fa-handshake"></i></div>
+            <h3 class="idea-title">Collaborate</h3>
+            <p class="idea-desc">Partner with brands, creators, and hotels that share a passion for genuine storytelling and positive impact.</p>
+          </div>
+
+          <div class="idea-card card-surface tilt-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="idea-icon"><i class="fa-solid fa-house"></i></div>
+            <h3 class="idea-title">Give Back Home</h3>
+            <p class="idea-desc">Invest in family and community back in Nepal. True success means bringing people along for the journey.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FEATURED BLOG
+    ═══════════════════════════════════════ -->
+    <section id="blog" class="py-24 px-5 relative overflow-hidden">
+      <div class="section-blob section-blob-left"></div>
+      <div class="max-w-6xl mx-auto relative z-10">
+
+        <div class="section-label-wrap" data-aos="fade-up">
+          <span class="section-label">Blog</span>
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="80">
+          Featured <span class="sky-gradient-text">Posts</span>
+        </h2>
+        <p class="text-center text-muted mt-4 mb-14 max-w-xl mx-auto text-sm" data-aos="fade-up" data-aos-delay="120">
+          Hotel, Dubai ra Nepalka katha — Roman Nepali ma.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-7">
+
+          <article class="blog-card card-surface tilt-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="blog-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=360&fit=crop&auto=format&q=80"
+                alt="Hotel Life"
+                class="blog-img"
+              />
+              <span class="blog-tag"><i class="fa-solid fa-hotel mr-1"></i>Hotel Life</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="fa-regular fa-calendar mr-1"></i>May 10, 2025</span>
+                <span><i class="fa-regular fa-clock mr-1"></i>4 min</span>
+              </div>
+              <h3 class="blog-title">Paanch Taare Hotel Ko Saccho Zindagi</h3>
+              <p class="blog-excerpt">Tyo chamkilo lobby ko pachadi ke hunchha sachchi? Dubai ma hotel professional ko ek dinko honest anubhav — glamour bhanada dherei kura hunchha.</p>
+              <a href="#" class="blog-more">Read More <i class="fa-solid fa-arrow-right ml-1 text-xs"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card card-surface tilt-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="blog-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=360&fit=crop&auto=format&q=80"
+                alt="Dubai Hidden Corners"
+                class="blog-img"
+              />
+              <span class="blog-tag blog-tag-travel"><i class="fa-solid fa-plane mr-1"></i>Travel</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="fa-regular fa-calendar mr-1"></i>Apr 22, 2025</span>
+                <span><i class="fa-regular fa-clock mr-1"></i>5 min</span>
+              </div>
+              <h3 class="blog-title">Dubai Ka Lukeko Sundar Thau Haru</h3>
+              <p class="blog-excerpt">Burj Khalifa ra luxury mall bhanada parey — mero priya thau haru jahan tourist haru praayajaso pugdainan. Yo ho mero real Dubai.</p>
+              <a href="#" class="blog-more">Read More <i class="fa-solid fa-arrow-right ml-1 text-xs"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card card-surface tilt-card" data-aos="fade-up" data-aos-delay="240">
+            <div class="blog-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&h=360&fit=crop&auto=format&q=80"
+                alt="Nepal Story"
+                class="blog-img"
+              />
+              <span class="blog-tag blog-tag-personal"><i class="fa-solid fa-heart mr-1"></i>Personal</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="fa-regular fa-calendar mr-1"></i>Mar 15, 2025</span>
+                <span><i class="fa-regular fa-clock mr-1"></i>6 min</span>
+              </div>
+              <h3 class="blog-title">UAE Ma Ek Nepali Ketako Sapana</h3>
+              <p class="blog-excerpt">21 barsama eutai suitcase ra dil bhariyeko asha liyera Nepal chadeko. Kasari yahaa aaipayen — sangharsha, bikas, ra aabhaarko katha.</p>
+              <a href="#" class="blog-more">Read More <i class="fa-solid fa-arrow-right ml-1 text-xs"></i></a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="text-center mt-12" data-aos="fade-up">
+          <a href="#" class="btn-outline-sm">
+            <i class="fa-solid fa-newspaper mr-2"></i>View All Posts
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         GALLERY
+    ═══════════════════════════════════════ -->
+    <section id="gallery" class="py-24 px-5 relative overflow-hidden">
+      <div class="section-blob section-blob-right"></div>
+      <div class="max-w-6xl mx-auto relative z-10">
+
+        <div class="section-label-wrap" data-aos="fade-up">
+          <span class="section-label">Gallery</span>
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="80">
+          Memories &amp; <span class="sky-gradient-text">Moments</span>
+        </h2>
+        <p class="text-center text-muted mt-4 mb-14 max-w-xl mx-auto text-sm" data-aos="fade-up" data-aos-delay="120">
+          Snapshots from Nepal, Dubai, hotel life, and everything in between.
+        </p>
+
+        <div class="gallery-grid">
+
+          <div class="gal-card" data-aos="fade-right" data-aos-delay="0">
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&h=600&fit=crop&auto=format&q=80" alt="Nepal Life" class="gal-img" />
+            <div class="gal-overlay">
+              <div class="gal-info">
+                <span class="gal-count"><i class="fa-solid fa-images mr-1"></i>24 Photos</span>
+                <h3 class="gal-name">Nepal Life</h3>
+                <p class="gal-desc">Mountains, culture &amp; festivals</p>
+                <a href="gallery-nepal.html" class="gal-btn">View Gallery <i class="fa-solid fa-arrow-right ml-1 text-xs"></i></a>
+              </div>
+            </div>
+            <div class="gal-shimmer"></div>
+          </div>
+
+          <div class="gal-card" data-aos="fade-left" data-aos-delay="80">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=700&h=500&fit=crop&auto=format&q=80" alt="Dubai Adventures" class="gal-img" />
+            <div class="gal-overlay">
+              <div class="gal-info">
+                <span class="gal-count"><i class="fa-solid fa-images mr-1"></i>18 Photos</span>
+                <h3 class="gal-name">Dubai Adventures</h3>
+                <p class="gal-desc">Skylines, desert &amp; experiences</p>
+                <a href="gallery-dubai.html" class="gal-btn">View Gallery <i class="fa-solid fa-arrow-right ml-1 text-xs"></i></a>
+              </div>
+            </div>
+            <div class="gal-shimmer"></div>
+          </div>
+
+          <div class="gal-card" data-aos="fade-right" data-aos-delay="160">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=700&h=500&fit=crop&auto=format&q=80" alt="Hotel Moments" class="gal-img" />
+            <div class="gal-overlay">
+              <div class="gal-info">
+                <span class="gal-count"><i class="fa-solid fa-images mr-1"></i>31 Photos</span>
+                <h3 class="gal-name">Hotel Moments</h3>
+                <p class="gal-desc">Behind the scenes of 5-star service</p>
+                <a href="gallery-hotel.html" class="gal-btn">View Gallery <i class="fa-solid fa-arrow-right ml-1 text-xs"></i></a>
+              </div>
+            </div>
+            <div class="gal-shimmer"></div>
+          </div>
+
+          <div class="gal-card" data-aos="fade-left" data-aos-delay="240">
+            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&h=600&fit=crop&auto=format&q=80" alt="Food & Culture" class="gal-img" />
+            <div class="gal-overlay">
+              <div class="gal-info">
+                <span class="gal-count"><i class="fa-solid fa-images mr-1"></i>15 Photos</span>
+                <h3 class="gal-name">Food &amp; Culture</h3>
+                <p class="gal-desc">Dal bhat to shawarma — culinary life</p>
+                <a href="gallery-food.html" class="gal-btn">View Gallery <i class="fa-solid fa-arrow-right ml-1 text-xs"></i></a>
+              </div>
+            </div>
+            <div class="gal-shimmer"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SOCIAL MEDIA
+    ═══════════════════════════════════════ -->
+    <section id="social" class="py-24 px-5 relative overflow-hidden">
+      <div class="section-blob section-blob-left"></div>
+      <div class="max-w-6xl mx-auto text-center relative z-10">
+
+        <div class="section-label-wrap" data-aos="fade-up">
+          <span class="section-label">Online</span>
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="80">
+          Follow My <span class="sky-gradient-text">Journey</span>
+        </h2>
+        <p class="text-muted mt-4 mb-14 max-w-xl mx-auto text-sm" data-aos="fade-up" data-aos-delay="120">
+          Join thousands following daily life in Dubai, Nepali culture, and real hospitality stories.
+        </p>
+
+        <div class="flex flex-col items-center mb-14" data-aos="zoom-in">
+          <div class="social-profile-frame">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=280&h=340&fit=crop&crop=face&auto=format&q=85"
+              alt="Rajesh Tiwari"
+              class="social-profile-img"
+            />
+          </div>
+          <h3 class="text-2xl font-bold mt-5 section-heading-text">Rajesh Tiwari</h3>
+          <p class="text-sky-main font-semibold mt-1 text-sm">@rajeshtiwari_uae &nbsp;·&nbsp; Content Creator &amp; Hotel Pro</p>
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+
+          <div class="platform-card card-surface tilt-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="plat-icon tiktok-plat"><i class="fa-brands fa-tiktok text-xl text-white"></i></div>
+            <h4 class="plat-name">TikTok</h4>
+            <p class="plat-handle">@rajeshtiwari_uae</p>
+            <p class="plat-count">10K+ Followers</p>
+            <a href="#" target="_blank" rel="noopener" class="plat-btn tiktok-btn">
+              Follow <i class="fa-solid fa-arrow-right text-xs ml-1"></i>
+            </a>
+          </div>
+
+          <div class="platform-card card-surface tilt-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="plat-icon fb-plat"><i class="fa-brands fa-facebook-f text-xl text-white"></i></div>
+            <h4 class="plat-name">Facebook</h4>
+            <p class="plat-handle">Rajesh Tiwari</p>
+            <p class="plat-count">5K+ Followers</p>
+            <a href="#" target="_blank" rel="noopener" class="plat-btn fb-btn">
+              Follow <i class="fa-solid fa-arrow-right text-xs ml-1"></i>
+            </a>
+          </div>
+
+          <div class="platform-card card-surface tilt-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="plat-icon ig-plat"><i class="fa-brands fa-instagram text-xl text-white"></i></div>
+            <h4 class="plat-name">Instagram</h4>
+            <p class="plat-handle">@rajesh.tiwari.uae</p>
+            <p class="plat-count">8K+ Followers</p>
+            <a href="#" target="_blank" rel="noopener" class="plat-btn ig-btn">
+              Follow <i class="fa-solid fa-arrow-right text-xs ml-1"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         CONTACT — Profile LEFT · Form RIGHT
+    ═══════════════════════════════════════ -->
+    <section id="contact" class="py-24 px-5 relative overflow-hidden">
+      <div class="section-blob section-blob-right"></div>
+      <div class="max-w-6xl mx-auto relative z-10">
+
+        <div class="section-label-wrap" data-aos="fade-up">
+          <span class="section-label">Say Hello</span>
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="80">
+          Get In <span class="sky-gradient-text">Touch</span>
+        </h2>
+        <p class="text-center text-muted mt-4 mb-14 max-w-xl mx-auto text-sm" data-aos="fade-up" data-aos-delay="120">
+          Collaborations, questions, waa kewal नमस्ते bhan — sabai swagat chha!
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-10 items-start">
+
+          <!-- LEFT: Profile card -->
+          <div class="contact-profile-card card-surface" data-aos="fade-right">
+
+            <div class="contact-avatar-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=260&h=260&fit=crop&crop=face&auto=format&q=85"
+                alt="Rajesh Tiwari"
+                class="contact-avatar"
+              />
+            </div>
+
+            <h3 class="contact-profile-name">Rajesh Tiwari</h3>
+            <p class="contact-profile-role">Hotel Professional &nbsp;·&nbsp; Content Creator</p>
+
+            <div class="contact-divider"></div>
+
+            <div class="contact-info-list">
+              <div class="contact-info-row">
+                <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <p class="contact-info-label">Location</p>
+                  <p class="contact-info-val">Dubai, UAE 🇦🇪</p>
+                </div>
+              </div>
+              <div class="contact-info-row">
+                <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <p class="contact-info-label">Email</p>
+                  <p class="contact-info-val">hello@rajeshtiwari.com</p>
+                </div>
+              </div>
+              <div class="contact-info-row">
+                <div class="contact-info-icon" style="background:rgba(37,211,102,0.1); border-color:rgba(37,211,102,0.2); color:#16a34a;">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                  <p class="contact-info-label">WhatsApp</p>
+                  <p class="contact-info-val">+977 981 345 6789</p>
+                </div>
+              </div>
+              <div class="contact-info-row">
+                <div class="contact-info-icon"><i class="fa-solid fa-clock"></i></div>
+                <div>
+                  <p class="contact-info-label">Response Time</p>
+                  <p class="contact-info-val">Within 24 Hours</p>
+                </div>
+              </div>
+              <div class="contact-info-row">
+                <div class="contact-info-icon"><i class="fa-solid fa-flag"></i></div>
+                <div>
+                  <p class="contact-info-label">Origin</p>
+                  <p class="contact-info-val">🇳🇵 Nepal · Global</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-social-row">
+              <a href="#" target="_blank" rel="noopener" class="contact-soc-btn tiktok-soc" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener" class="contact-soc-btn fb-soc" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener" class="contact-soc-btn ig-soc" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://wa.me/9779813456789" target="_blank" rel="noopener" class="contact-soc-btn wa-soc" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- RIGHT: Form -->
+          <div class="card-surface p-8 rounded-3xl" data-aos="fade-left" data-aos-delay="100">
+            <h3 class="text-lg font-bold mb-1 section-heading-text">Sandesh Pathaunu</h3>
+            <p class="text-sm text-muted mb-6">Tala form bharnu — WhatsApp ma direct aunchha.</p>
+            <form id="contact-form" class="space-y-5">
+              <div>
+                <label class="contact-label">Tapaiko Naam</label>
+                <input id="c-name" type="text" placeholder="e.g. Sita Sharma" class="contact-input" required />
+              </div>
+              <div>
+                <label class="contact-label">Email Address</label>
+                <input id="c-email" type="email" placeholder="tapai@email.com" class="contact-input" />
+              </div>
+              <div>
+                <label class="contact-label">Sandesh (Message)</label>
+                <textarea id="c-msg" rows="5" placeholder="Namaste Rajesh! Ma tapailai bhanna chahanchhu..." class="contact-input resize-none"></textarea>
+              </div>
+              <button type="submit" class="btn-whatsapp">
+                <i class="fa-brands fa-whatsapp mr-2 text-lg"></i>WhatsApp ma Pathaunu
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="bg-navy text-white/50 pt-16 pb-8 px-5">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="grid md:grid-cols-3 gap-10 pb-12 border-b border-white/5">
+
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <div class="logo-badge">RT</div>
+            <span class="text-white font-bold text-base">Rajesh Tiwari</span>
+          </div>
+          <p class="text-sm leading-relaxed mb-6 max-w-xs">
+            Hotel Professional &amp; Content Creator based in Dubai. Nepali at heart, global in spirit.
+          </p>
+          <div class="flex gap-3">
+            <a href="#" class="footer-soc"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="footer-soc"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="footer-soc"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/9779813456789" class="footer-soc" style="background:rgba(37,211,102,0.15);"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-5 text-sm uppercase tracking-widest">Quick Links</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#about"   class="footer-link">About Me</a></li>
+            <li><a href="#journey" class="footer-link">My Journey</a></li>
+            <li><a href="#vision"  class="footer-link">Vision &amp; Mission</a></li>
+            <li><a href="#blog"    class="footer-link">Blog</a></li>
+            <li><a href="#gallery" class="footer-link">Gallery</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-5 text-sm uppercase tracking-widest">Connect</h4>
+          <p class="text-sm leading-relaxed mb-5">
+            Collab idea chha? Waa kewal नमस्ते bhan — ma sabailai reply garnchhu!
+          </p>
+          <a href="#contact" class="btn-primary-sm inline-flex">
+            <i class="fa-brands fa-whatsapp mr-2"></i>Send a Message
+          </a>
+          <p class="text-sm mt-5">
+            <i class="fa-solid fa-envelope mr-2 text-sky-light"></i>hello@rajeshtiwari.com
+          </p>
+          <p class="text-sm mt-2">
+            <i class="fa-solid fa-location-dot mr-2 text-sky-light"></i>Dubai, UAE 🇦🇪
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/25">
+        <p>&copy; 2025 Rajesh Tiwari. All rights reserved.</p>
+        <p>From Nepal 🇳🇵 with love · Based in Dubai 🇦🇪</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

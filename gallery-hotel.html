@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hotel Moments — Behind the scenes of 5-star service. Rajesh Tiwari photo gallery." />
+  <title>Hotel Moments · Gallery | Rajesh Tiwari</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'sky-main':   '#025a8e',
+            'sky-bright': '#0369a1',
+            'sky-light':  '#0ea5e9',
+            'sky-pale':   '#7dd3fc',
+            'sky-wash':   '#eef7ff',
+            'navy':       '#071c38',
+            'body-text':  '#2a4560',
+            'muted':      '#5a7a9a',
+          },
+          fontFamily: { poppins: ['Poppins', 'sans-serif'] },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="font-poppins bg-white text-navy antialiased overflow-x-hidden">
+
+  <!-- HEADER -->
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="header-inner max-w-7xl mx-auto px-5 py-3.5">
+
+      <a href="index.html#hero" class="logo-link flex items-center gap-2.5 flex-shrink-0">
+        <div class="logo-badge">RT</div>
+        <span class="logo-name font-bold text-base">Rajesh Tiwari</span>
+      </a>
+
+      <nav class="desktop-nav hidden md:flex items-center gap-6">
+        <a href="index.html#about"   class="nav-link">About</a>
+        <a href="index.html#journey" class="nav-link">Journey</a>
+        <a href="index.html#vision"  class="nav-link">Vision</a>
+        <a href="index.html#ideas"   class="nav-link">Ideas</a>
+        <a href="index.html#blog"    class="nav-link">Blog</a>
+        <a href="index.html#gallery" class="nav-link">Gallery</a>
+        <a href="index.html#social"  class="nav-link">Social</a>
+        <a href="index.html#contact" class="btn-primary-sm ml-2">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+          <i id="theme-icon" class="fa-solid fa-moon"></i>
+          <span class="toggle-label">Dark</span>
+        </button>
+        <button id="hamburger" class="hamburger-btn md:hidden" aria-label="Toggle menu" aria-expanded="false">
+          <span class="h-line"></span>
+          <span class="h-line"></span>
+          <span class="h-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu-closed md:hidden overflow-hidden transition-all duration-300">
+      <nav class="px-6 py-4 flex flex-col items-center gap-0 border-t border-sky-100">
+        <a href="index.html#about"   class="mob-nav-link">About</a>
+        <a href="index.html#journey" class="mob-nav-link">Journey</a>
+        <a href="index.html#vision"  class="mob-nav-link">Vision</a>
+        <a href="index.html#ideas"   class="mob-nav-link">Ideas</a>
+        <a href="index.html#blog"    class="mob-nav-link">Blog</a>
+        <a href="index.html#gallery" class="mob-nav-link">Gallery</a>
+        <a href="index.html#social"  class="mob-nav-link">Social</a>
+        <div class="mt-4 w-full flex justify-center">
+          <a href="index.html#contact" class="btn-primary-sm">Get In Touch</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- GALLERY PAGE HERO -->
+    <section class="gallery-page-hero pt-28 pb-12 px-5">
+      <div class="max-w-5xl mx-auto">
+
+        <a href="index.html#gallery" class="gallery-back-btn" data-aos="fade-right">
+          <i class="fa-solid fa-arrow-left"></i>
+          Back to Gallery
+        </a>
+
+        <div class="gallery-page-meta" data-aos="fade-up">
+          <div class="gallery-page-icon" style="--accent:#046e50;">
+            <i class="fa-solid fa-concierge-bell"></i>
+          </div>
+          <div>
+            <span class="gallery-page-label">Photo Collection</span>
+            <h1 class="gallery-page-title">Hotel Moments</h1>
+            <p class="gallery-page-desc">Behind the scenes of 5-star service</p>
+          </div>
+          <span id="gallery-count" class="gallery-page-count"></span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PHOTO GRID -->
+    <section class="pb-24 px-5">
+      <div class="max-w-5xl mx-auto">
+        <div id="gallery-grid" class="photo-grid"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Photo lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close lightbox">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <button id="lightbox-prev" class="lightbox-prev" onclick="shiftLightbox(-1)" aria-label="Previous photo">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button id="lightbox-next" class="lightbox-next" onclick="shiftLightbox(1)" aria-label="Next photo">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="" />
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+      <p id="lightbox-counter" class="lightbox-counter"></p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy text-white/50 pt-16 pb-8 px-5">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="grid md:grid-cols-3 gap-10 pb-12 border-b border-white/5">
+
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <div class="logo-badge">RT</div>
+            <span class="text-white font-bold text-base">Rajesh Tiwari</span>
+          </div>
+          <p class="text-sm leading-relaxed mb-6 max-w-xs">
+            Hotel Professional &amp; Content Creator based in Dubai. Nepali at heart, global in spirit.
+          </p>
+          <div class="flex gap-3">
+            <a href="#" class="footer-soc"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="footer-soc"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="footer-soc"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/9779813456789" class="footer-soc" style="background:rgba(37,211,102,0.15);"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-5 text-sm uppercase tracking-widest">Quick Links</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="index.html#about"   class="footer-link">About Me</a></li>
+            <li><a href="index.html#journey" class="footer-link">My Journey</a></li>
+            <li><a href="index.html#vision"  class="footer-link">Vision &amp; Mission</a></li>
+            <li><a href="index.html#blog"    class="footer-link">Blog</a></li>
+            <li><a href="index.html#gallery" class="footer-link">Gallery</a></li>
+            <li><a href="index.html#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-5 text-sm uppercase tracking-widest">Connect</h4>
+          <p class="text-sm leading-relaxed mb-5">
+            Collab idea chha? Waa kewal नमस्ते bhan — ma sabailai reply garnchhu!
+          </p>
+          <a href="index.html#contact" class="btn-primary-sm inline-flex">
+            <i class="fa-brands fa-whatsapp mr-2"></i>Send a Message
+          </a>
+          <p class="text-sm mt-5">
+            <i class="fa-solid fa-envelope mr-2 text-sky-light"></i>hello@rajeshtiwari.com
+          </p>
+          <p class="text-sm mt-2">
+            <i class="fa-solid fa-location-dot mr-2 text-sky-light"></i>Dubai, UAE 🇦🇪
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/25">
+        <p>&copy; 2025 Rajesh Tiwari. All rights reserved.</p>
+        <p>From Nepal 🇳🇵 with love · Based in Dubai 🇦🇪</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/gallery-config.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/site-utils.js"></script>
+  <script>
+    AOS.init({ duration: 600, once: true, offset: 60 });
+    document.addEventListener('DOMContentLoaded', () => {
+      renderGallery('hotel', 'gallery-grid');
+    });
+  </script>
+</body>
+</html>
